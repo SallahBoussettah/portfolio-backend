@@ -1,0 +1,15 @@
+[build]
+  functions = "functions"
+  publish = "public"
+
+# Redirect all API requests to the serverless functions
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+# Default redirect to frontend for all other requests
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
