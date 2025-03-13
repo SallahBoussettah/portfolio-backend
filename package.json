@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-backend",
+  "version": "1.0.0",
+  "description": "Backend API for portfolio website using Netlify serverless functions",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev",
+    "build": "netlify build",
+    "deploy": "netlify deploy --prod"
+  },
+  "keywords": [
+    "portfolio",
+    "api",
+    "serverless",
+    "netlify",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "serverless-http": "^3.2.0"
+  }
+}
